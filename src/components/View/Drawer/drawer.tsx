@@ -1,20 +1,28 @@
 import React from 'react'
-import { List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
-import { Send } from '@mui/icons-material'
+import {
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Box,
+  ListItem,
+} from '@mui/material'
+import { Summarize } from '@mui/icons-material'
 
 const Drawer: React.VFC = () => {
   return (
-    <List
-      sx={{ width: '100%', maxwidth: 360, bgcolor: 'background.paper' }}
-      component="nav"
-    >
-      <ListItemButton>
-        <ListItemIcon>
-          <Send />
-          <ListItemText primary="send mail" />
-        </ListItemIcon>
-      </ListItemButton>
-    </List>
+    <Box sx={{ width: '100%', maxWidth: 200, bgcolor: 'Background.paper' }}>
+      <List component="nav" aria-label="list">
+        <ListItem>
+          <ListItemButton>
+            <ListItemIcon>
+              <Summarize />
+            </ListItemIcon>
+            <ListItemText primary="週報" />
+          </ListItemButton>
+        </ListItem>
+      </List>
+    </Box>
   )
 }
 
