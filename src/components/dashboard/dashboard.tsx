@@ -1,5 +1,5 @@
 import React from 'react'
-import Drawer from '../Drawer/drawer'
+import Drawer from '../drawer/drawer'
 
 const DashBoard: React.VFC = () => {
   return (
