@@ -1,12 +1,13 @@
 import React from 'react'
-import Drawer from '../drawer/drawer'
+import { Box } from '@mui/material'
+
+import AppBar from '../appbar/appbar'
 
 const DashBoard: React.VFC = () => {
   return (
-    <div>
-      <h1>DashBoard</h1>
-      <Drawer />
-    </div>
+    <Box>
+      <AppBar />
+    </Box>
   )
 }
 
